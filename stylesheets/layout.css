@@ -65,3 +65,36 @@ hr {
 hr {
   border-bottom: none;
 }
+li {
+  margin: 20px 0;
+  margin-left: 20px;
+}
+ul li {
+  list-style-type: square;
+}
+ol li {
+  list-style-type: decimal;
+}
+
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+blockquote::before {
+  content: '';
+  width: 3px;
+  height: 100%;
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+/* стили для бокового меню */
+.sidebar {
+  width: 300px;
+}
+.sidebar li {
+  list-style-type: none;
+  font-size: 15px;
+}
